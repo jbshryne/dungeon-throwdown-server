@@ -58,7 +58,7 @@ function getHitTextArray(damage) {
   return hitTextArray;
 }
 
-export const DungeonThrowdown = {
+const DungeonThrowdown = {
   setup: () => ({
     tiles: Array(81)
       .fill(null)
@@ -333,7 +333,7 @@ export const DungeonThrowdown = {
   },
 };
 
-export function getBattleRoll(diceArray, type) {
+function getBattleRoll(diceArray, type) {
   const dice = diceArray.map((die) => {
     if (die === 1) {
       return "blank";
@@ -355,7 +355,7 @@ function boxPosition(occupiedTiles) {
   return newBox;
 }
 
-export function getBoxRoll(result) {
+function getBoxRoll(result) {
   // console.log("getBoxRoll", result);
   if (result === 12) {
     return { name: "Scroll of Lightning", type: "DMG", amount: 1 };
