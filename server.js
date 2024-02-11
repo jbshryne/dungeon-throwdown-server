@@ -1,4 +1,4 @@
-const { Server, Origins } = require("boardgame.io/server");
+import { Server, Origins } from "boardgame.io/server";
 
 const hero = {
   id: 0,
