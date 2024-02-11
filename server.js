@@ -389,10 +389,10 @@ const server = Server({
 
   origins: [
     // Allow your game site to connect.
-    // "https://dungeon-throwdown.onrender.com/",
+    "https://dungeon-throwdown.onrender.com/",
     // Allow localhost to connect, except when NODE_ENV is 'production'.
-    // Origins.LOCALHOST_IN_DEVELOPMENT,
-    Origins.LOCALHOST,
+    Origins.LOCALHOST_IN_DEVELOPMENT,
+    // Origins.LOCALHOST,
   ],
 });
 
