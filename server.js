@@ -114,12 +114,6 @@ const DungeonThrowdown = {
       const currentPlayerName = currentPlayer.name;
       const currentPlayerTeam = currentPlayer.team;
       const isPlayer1 = playerID === "0";
-      // let isActivePlayer;
-
-      // if (isMultiplayer) {
-      //   isActivePlayer = playerID === ctx.currentPlayer;
-      //   console.log("isActivePlayer", isActivePlayer);
-      // }
 
       const attackedPlayer = G.players.find(
         (player) => player.position === tileIdx
